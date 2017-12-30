@@ -1,8 +1,14 @@
 module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-  },
   pathPrefix: '/diskold.github.io',
-  plugins: [`gatsby-plugin-react-helmet`],
-  
+  plugins: ['gatsby-plugin-react-helmet',
+    /* other plugins */
+    {
+      resolve: 'gatsby-plugin-github-pages',
+      options: {
+        publishOptions: {
+          /* ... */
+        }
+      }
+    }
+  ]
 }
